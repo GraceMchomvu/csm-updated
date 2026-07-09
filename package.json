@@ -1,0 +1,36 @@
+{
+  "name": "halpes-nuxt",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "set NODE_OPTIONS=--openssl-legacy-provider&& nuxt",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider&& nuxt build",
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider&& nuxt start",
+    "generate": "set NODE_OPTIONS=--openssl-legacy-provider&& nuxt generate",
+    "cf:build": "npm run generate",
+    "cf:deploy": "npm run generate && npx wrangler pages deploy dist --project-name=csm-church",
+    "cf:preview": "npm run generate && npx wrangler pages dev dist --compatibility-date=2024-09-23"
+  },
+  "dependencies": {
+    "@nuxtjs/i18n": "^7.3.1",
+    "accordion-js": "^3.1.1",
+    "bootstrap": "^5.1.3",
+    "core-js": "^3.15.1",
+    "gsap": "^3.15.0",
+    "jarallax": "^1.12.8",
+    "nuxt": "^2.15.7",
+    "object-fit-images": "^3.2.4",
+    "swiper": "5.x",
+    "vue": "2.6.14",
+    "vue-awesome-swiper": "^4.1.1",
+    "vue-count-to": "^1.0.13",
+    "vue-ellipse-progress": "^1.3.0",
+    "vue-observe-visibility": "^1.0.0",
+    "vue-scrollactive": "^0.9.3",
+    "vue-server-renderer": "2.6.14",
+    "vue-template-compiler": "2.6.14",
+    "vue-tiny-slider": "^0.1.39",
+    "vue-wow": "^1.2.0",
+    "vuejs-countdown": "^0.2.1"
+  }
+}

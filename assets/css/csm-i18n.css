@@ -1,0 +1,79 @@
+/* Arabic RTL support */
+html[dir="rtl"] body {
+  direction: rtl;
+  text-align: right;
+}
+
+html[dir="rtl"] .main-menu__list,
+html[dir="rtl"] .thm-breadcrumb,
+html[dir="rtl"] .footer-widget__explore-list,
+html[dir="rtl"] .footer-widget__contact-list,
+html[dir="rtl"] .contact-page__contact-list,
+html[dir="rtl"] .helping-one__left-list,
+html[dir="rtl"] .visit-home__rows,
+html[dir="rtl"] .give-one__details,
+html[dir="rtl"] .main-slider__counter-box {
+  direction: rtl;
+}
+
+html[dir="rtl"] .main-menu__right {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .main-menu__donate-btn i,
+html[dir="rtl"] .thm-btn i,
+html[dir="rtl"] .footer-widget__about-btn i,
+html[dir="rtl"] .footer-widget__newsletter-btn i,
+html[dir="rtl"] .welcome-one__btn i,
+html[dir="rtl"] .three-boxes__btn i,
+html[dir="rtl"] .latest-sermons__watch i {
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+html[dir="rtl"] .main-menu__phone-contact,
+html[dir="rtl"] .visit-home__row,
+html[dir="rtl"] .footer-widget__contact-list li,
+html[dir="rtl"] .contact-page__contact-list li,
+html[dir="rtl"] .helping-one__left-list li,
+html[dir="rtl"] .help-them__single {
+  direction: rtl;
+}
+
+html[dir="rtl"] .visit-home__chevron,
+html[dir="rtl"] .welcome-one__live-link i,
+html[dir="rtl"] .visit-home__link i {
+  transform: scaleX(-1);
+}
+
+html[dir="rtl"] .section-title.text-left,
+html[dir="rtl"] .welcome-one__right,
+html[dir="rtl"] .about-page__right,
+html[dir="rtl"] .testimonial-one__left {
+  text-align: right;
+}
+
+/* Language switcher placement in header */
+.main-menu__right .main-menu__lang,
+.main-menu__right .language-switcher {
+  display: inline-flex;
+  order: -1;
+}
+
+@media only screen and (max-width: 1199px) {
+  .main-menu__right {
+    display: flex !important;
+    align-items: center;
+    padding-left: 0;
+    margin-left: auto;
+  }
+
+  .main-menu__right:before {
+    display: none;
+  }
+
+  .main-menu__right .language-switcher {
+    display: inline-flex !important;
+    margin-right: 12px;
+  }
+}

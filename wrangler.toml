@@ -1,0 +1,8 @@
+name = "csm-church"
+compatibility_date = "2024-09-23"
+pages_build_output_dir = "dist"
+
+# Optional: set these in Cloudflare Pages → Settings → Environment variables
+# YOUTUBE_CHANNEL_ID = "UCPZvI54-Y9RCndQ1nwMZkqQ"
+# YOUTUBE_CHANNEL_URL = "https://www.youtube.com/@ogillob"
+# SITE_URL = "https://www.csm.church"

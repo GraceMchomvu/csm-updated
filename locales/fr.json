@@ -1,0 +1,408 @@
+{
+  "meta": {
+    "title": "Christ Synagogue Ministries | Arusha, Tanzanie",
+    "description": "Christ Synagogue Ministries est une église vibrante remplie de l'Esprit à Majengo, Arusha, dirigée par Prophet Baraka David Ogillo."
+  },
+  "common": {
+    "home": "Accueil",
+    "callAnytime": "Appelez à tout moment",
+    "sendEmail": "Envoyer un e-mail",
+    "visitUs": "Nous rendre visite",
+    "visit": "Visiter",
+    "location": "Lieu",
+    "email": "E-mail",
+    "search": "Rechercher",
+    "searchPlaceholder": "Rechercher ici...",
+    "give": "Donner",
+    "watchOnYoutube": "Regarder sur YouTube",
+    "watchNow": "Regarder maintenant",
+    "watchTheVideo": "Regarder la vidéo",
+    "learnMore": "En savoir plus sur nous",
+    "planYourVisit": "Planifier votre visite",
+    "contactUs": "Nous contacter",
+    "getDirections": "Obtenir l'itinéraire",
+    "joinUs": "Nous rejoindre",
+    "loading": "Chargement…",
+    "youtube": "YouTube",
+    "language": "Langue"
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Cultes",
+    "gallery": "Galerie",
+    "sermons": "Sermons",
+    "contact": "Contact"
+  },
+  "pages": {
+    "about": {
+      "title": "À propos de nous",
+      "name": "À propos",
+      "eyebrow": "Notre histoire",
+      "subtitle": "Une maison remplie de l Esprit qui aide a trouver et suivre Jesus."
+    },
+    "contact": {
+      "title": "Nous contacter",
+      "name": "Contact",
+      "eyebrow": "Planifiez votre visite",
+      "subtitle": "Vous etes les bienvenus a Majengo, Arusha. Nous serions ravis de vous rencontrer."
+    },
+    "events": {
+      "title": "Cultes",
+      "name": "Cultes",
+      "eyebrow": "Rassemblons-nous",
+      "subtitle": "Venez adorer, prier et grandir avec nous toute la semaine."
+    },
+    "news": {
+      "title": "Sermons",
+      "name": "Sermons",
+      "eyebrow": "Regarder et grandir",
+      "subtitle": "Derniers messages du Prophete Baraka David Ogillo sur YouTube."
+    },
+    "gallery": {
+      "title": "Galerie",
+      "name": "Galerie",
+      "eyebrow": "Moments de foi",
+      "subtitle": "Apercus du culte, de la priere et des vies transformees a CSM."
+    },
+    "volunteers": {
+      "title": "Ministère",
+      "name": "Ministère",
+      "eyebrow": "Notre ministere",
+      "subtitle": "Des equipes qui servent avec amour, foi et excellence a CSM."
+    }
+  },
+  "footer": {
+    "aboutTitle": "À propos",
+    "aboutText": "Christ Synagogue Ministries est une église vibrante remplie de l'Esprit à Majengo, Arusha, qui aide les gens à trouver et à suivre Jésus.",
+    "exploreTitle": "Explorer",
+    "ourProphet": "Notre prophète",
+    "ministry": "Ministère",
+    "contactTitle": "Contact",
+    "newsletterTitle": "Restez connectés",
+    "newsletterText": "Abonnez-vous pour recevoir des actualités sur les cultes, sermons et nouvelles du ministère de CSM.",
+    "emailPlaceholder": "Adresse e-mail",
+    "send": "Envoyer",
+    "newsletterSent": "Votre application e-mail s’ouvrira pour finaliser votre abonnement.",
+    "copyright": "© Copyright {year} par"
+  },
+  "site": {
+    "tagline": "Aider les gens à trouver et à suivre Jésus",
+    "location": "Majengo, Arusha, Tanzanie",
+    "locationShort": "Majengo, Arusha",
+    "serviceTimes": "Sam 14h00 · Dim 10h00 · Mar/Jeu 18h00 EAT",
+    "prophet": "Prophet Baraka David Ogillo"
+  },
+  "home": {
+    "slider": [
+      {
+        "subtitle": "Christ Synagogue Ministries",
+        "title": "Aider les gens à trouver <br> et à suivre Jésus",
+        "buttonLabel": "Planifier votre visite"
+      },
+      {
+        "subtitle": "Rejoignez-nous dans l'adoration",
+        "title": "Une maison vivante <br> de louange",
+        "buttonLabel": "Nos cultes"
+      },
+      {
+        "subtitle": "Prophet Baraka David Ogillo",
+        "title": "Des vies transformées <br> par la foi",
+        "buttonLabel": "Rencontrez notre prophète"
+      }
+    ],
+    "counter": [
+      "Années de ministère",
+      "Vies transformées"
+    ],
+    "welcome": {
+      "karibu": "Karibu CSM",
+      "tagline": "Bienvenue à CSM",
+      "title": "Aider les gens à trouver et à suivre Jésus",
+      "text": "Christ Synagogue Ministries est une communauté vibrante de croyants à Arusha, en Tanzanie, dédiée à transformer des vies par la puissance du Saint-Esprit sous Prophet Baraka David Ogillo.",
+      "missionTitle": "Notre mission",
+      "missionText": "Glorifier Dieu et faire des disciples de toutes les nations par la puissance du Saint-Esprit.",
+      "visionTitle": "Notre vision",
+      "visionText": "Une communauté florissante transformée par l'amour de Dieu à travers la Tanzanie et au-delà.",
+      "values": "Nos valeurs :",
+      "valuesText": "Foi, Intégrité, Communauté et Excellence — les piliers qui guident tout ce que nous faisons à CSM.",
+      "learnMore": "En savoir plus sur nous",
+      "liveNow": "En direct maintenant",
+      "latestLive": "Dernier culte en direct",
+      "latestService": "Dernier culte de CSM",
+      "loadingLive": "Chargement du dernier culte…",
+      "liveUnavailable": "Le dernier culte est temporairement indisponible.",
+      "openChannel": "Ouvrir la chaîne YouTube"
+    },
+    "sermons": {
+      "subtitle": "Derniers sermons",
+      "title": "Une Parole puissante pour votre parcours",
+      "intro": "Regardez les derniers messages de Prophet Baraka David Ogillo. Ce flux se met à jour automatiquement lorsqu'un nouveau sermon est publié sur YouTube.",
+      "loading": "Chargement des sermons…",
+      "unavailable": "Les sermons sont temporairement indisponibles.",
+      "watchSermon": "Regarder le sermon",
+      "viewAll": "Tout voir sur YouTube"
+    },
+    "cta": {
+      "title": "Venez adorer avec nous à <br /> Majengo, Arusha",
+      "button": "Planifier votre visite"
+    },
+    "features": [
+      {
+        "title": "Culte du jeudi",
+        "text": "Adoration et ministère chaque jeudi à 18h00 EAT à Arusha."
+      },
+      {
+        "title": "Culte du samedi",
+        "text": "Communion, adoration et croissance spirituelle chaque samedi à 14h00 EAT."
+      },
+      {
+        "title": "Culte du dimanche",
+        "text": "Adoration, ministère prophétique et enseignement de la Parole de Dieu à 10h00 EAT."
+      }
+    ],
+    "visit": {
+      "tagline": "Nous rendre visite",
+      "title": "Trouvez votre chemin vers CSM",
+      "welcomeTitle": "Karibu — Vous êtes les bienvenus",
+      "welcomeText": "Christ Synagogue Ministries se réunit tout au long de la semaine à Arusha pour adorer, prier et grandir ensemble dans la foi. Nous serions ravis de vous accueillir cette semaine.",
+      "sat": "Culte du samedi · 14h00 EAT",
+      "sun": "Culte du dimanche · 10h00 EAT",
+      "tueThu": "Mardi et jeudi · 18h00 EAT",
+      "eyebrow": "Venez adorer avec nous",
+      "serviceTimes": "Horaires des cultes",
+      "satShort": "Sam",
+      "sunShort": "Dim",
+      "tueThuShort": "Mar / Jeu"
+    },
+    "give": {
+      "tagline": "Partenaires avec nous",
+      "title": "Donner à l'œuvre de Dieu",
+      "intro": "Votre généreux soutien nous permet de continuer à répandre l'Évangile, de servir notre communauté et de transformer des vies à travers la Tanzanie.",
+      "mpesaTitle": "M-Pesa",
+      "mpesaLabel": "Donner via M-Pesa",
+      "mpesaSend": "Envoyer à : {phone}",
+      "mpesaName": "Nom : Christ Synagogue Ministries",
+      "bankTitle": "Virement bancaire",
+      "bankLabel": "CRDB Bank",
+      "bankAccount": "Compte : 015C922043100",
+      "bankName": "Nom : CHRISTS SYNAGOGUE MINISTRY",
+      "personTitle": "En personne",
+      "personLabel": "Donner lors de notre culte du dimanche",
+      "personDetail1": "Des paniers d'offrande sont disponibles",
+      "personDetail2": "pendant l'adoration",
+      "verse": "« Donnez, et il vous sera donné : on versera dans votre sein une bonne mesure, serrée, secouée et qui déborde. »",
+      "verseRef": "— Luc 6:38"
+    },
+    "testimonials": {
+      "subtitle": "Témoignages",
+      "title": "Des vies transformées par Jésus",
+      "member": "Membre de l'église",
+      "items": [
+        "Je suis venu à CSM brisé et sans espoir. Par la puissance de la prière et de la Parole de Dieu, Jésus a complètement transformé ma vie. Il a restauré ma famille et m'a donné un nouveau but en Lui.",
+        "La présence de Dieu à Christ Synagogue Ministries est tangible. Jésus a approfondi ma foi par Sa Parole, et j'ai vu Sa puissance changer mon cœur d'une manière que je n'aurais jamais imaginée.",
+        "Jésus m'a guéri, m'a délivré et m'a rempli d'une onction nouvelle. Ce que Dieu a déclaré sur ma vie était précis et a changé ma vie. À CSM, j'ai été témoin des miracles de Jésus."
+      ]
+    },
+    "video": {
+      "title": "Venez expérimenter la présence de Dieu avec nous",
+      "watch": "Regarder la vidéo",
+      "features": [
+        {
+          "title": "Adorez avec nous",
+          "text": "Vivez une louange dynamique et la présence de Dieu à chaque culte."
+        },
+        {
+          "title": "Grandir dans la foi",
+          "text": "Soyez transformés par l'enseignement de la Parole de Dieu chaque semaine."
+        },
+        {
+          "title": "Trouvez votre but",
+          "text": "Une communauté remplie de l'Esprit qui aide les gens à trouver et à suivre Jésus."
+        }
+      ]
+    }
+  },
+  "about": {
+    "ledBy": "Dirigée par <span>Prophet Baraka</span> David Ogillo",
+    "tagline": "Notre histoire et notre mission",
+    "title": "Une église appelée à transformer des vies",
+    "text": "Christ Synagogue Ministries a été fondée sous l'appel divin de Prophet Baraka David Ogillo à Arusha, en Tanzanie. Ce qui a commencé comme un petit rassemblement de croyants fidèles est devenu une communauté vibrante remplie de l'Esprit qui touche des milliers de vies.",
+    "highlight": "Nous ne construisons pas seulement une église ; nous construisons un mouvement de vies transformées.",
+    "focus": [
+      "Adoration remplie de l’Esprit chaque semaine",
+      "Ministère prophétique et délivrance",
+      "Discipulat qui aide à suivre Jésus",
+      "Une famille d’église aimante à Majengo, Arusha"
+    ],
+    "beliefs": {
+      "tagline": "Ce que nous croyons",
+      "title": "Le cœur de Christ Synagogue Ministries",
+      "intro": "Notre vie commune est façonnée par la Parole de Dieu, la puissance du Saint-Esprit et le désir d’aider chacun à trouver et suivre Jésus.",
+      "pillars": [
+        {
+          "title": "Adoration",
+          "text": "Nous nous rassemblons pour exalter Jésus avec une louange passionnée et une soif de Sa présence à chaque culte."
+        },
+        {
+          "title": "La Parole",
+          "text": "Nous enseignons les Écritures avec clarté et puissance afin que chaque croyant grandisse dans la foi."
+        },
+        {
+          "title": "Ministère prophétique",
+          "text": "Nous laissons place au Saint-Esprit pour parler, guérir, délivrer et donner une direction pour la vie."
+        },
+        {
+          "title": "Communauté",
+          "text": "Nous marchons ensemble comme une famille — accueillant chacun dans l’amour, la prière et la vocation."
+        }
+      ],
+      "verse": "« Car le royaume de Dieu ne consiste pas en paroles, mais en puissance. »",
+      "verseRef": "— 1 Corinthiens 4:20"
+    }
+  },
+  "contact": {
+    "tagline": "Trouvez votre chemin vers CSM",
+    "title": "Nous serions ravis de vous accueillir <br /> cette semaine",
+    "intro": "Visitez Christ Synagogue Ministries à Majengo, Arusha. Rejoignez-nous pour l'adoration, la prière et le ministère prophétique tout au long de la semaine.",
+    "name": "Votre nom",
+    "email": "Adresse e-mail",
+    "subject": "Sujet",
+    "phone": "Numéro de téléphone",
+    "message": "Écrire un message",
+    "submit": "Envoyer un message",
+    "sentHint": "Votre application e-mail s’ouvrira pour envoyer ce message à CSM.",
+    "mapTitle": "Christ Synagogue Ministries — Majengo, Arusha"
+  },
+  "events": {
+    "items": [
+      {
+        "title": "Culte du jeudi",
+        "time": "18h00 EAT"
+      },
+      {
+        "title": "Culte du samedi",
+        "time": "14h00 EAT"
+      },
+      {
+        "title": "Culte du dimanche",
+        "time": "10h00 EAT"
+      },
+      {
+        "title": "Culte du mardi",
+        "time": "18h00 EAT"
+      },
+      {
+        "title": "Louange et adoration",
+        "time": "10h00 EAT"
+      },
+      {
+        "title": "Ministère prophétique",
+        "time": "18h00 EAT"
+      }
+    ]
+  },
+  "news": {
+    "items": [
+      {
+        "title": "Dernier culte du dimanche",
+        "excerpt": "Soyez transformés par l'enseignement de la Parole de Dieu de Prophet Baraka David Ogillo."
+      },
+      {
+        "title": "Dernier ministère prophétique",
+        "excerpt": "Recevez des paroles prophétiques personnelles, une guidance divine et une direction spirituelle pour votre vie."
+      },
+      {
+        "title": "Dernier culte d'adoration",
+        "excerpt": "Une maison vivante de louange — vivez une adoration dynamique à Christ Synagogue Ministries."
+      },
+      {
+        "title": "Prière et communion",
+        "excerpt": "Nous nous réunissons tout au long de la semaine pour adorer, prier et grandir ensemble dans la foi."
+      },
+      {
+        "title": "Moments de témoignage",
+        "excerpt": "Histoires de guérison, de délivrance et de vies transformées par la puissance du Saint-Esprit."
+      },
+      {
+        "title": "Bienvenue chez CSM",
+        "excerpt": "Peu importe où vous en êtes dans votre parcours spirituel, il y a une place pour vous à CSM."
+      }
+    ],
+    "comments": "{count} commentaires"
+  },
+  "gallery": {
+    "items": [
+      {
+        "title": "Assemblée",
+        "category": "Communauté"
+      },
+      {
+        "title": "Louange et adoration",
+        "category": "Adoration"
+      },
+      {
+        "title": "Culte de prière",
+        "category": "Prière"
+      },
+      {
+        "title": "Ministère prophétique",
+        "category": "Ministère"
+      },
+      {
+        "title": "Temps de témoignage",
+        "category": "Témoignage"
+      },
+      {
+        "title": "Culte prophétique",
+        "category": "Ministère"
+      },
+      {
+        "title": "Famille de l'église",
+        "category": "Communauté"
+      },
+      {
+        "title": "Ministère d'adoration",
+        "category": "Adoration"
+      },
+      {
+        "title": "Vies transformées",
+        "category": "Témoignage"
+      }
+    ]
+  },
+  "volunteers": {
+    "items": [
+      {
+        "title": "Prophet Baraka David Ogillo",
+        "designation": "Fondateur et prophète principal",
+        "excerpt": "Appelé à établir un ministère de guérison, de délivrance et de révélation prophétique à Arusha."
+      },
+      {
+        "title": "Équipe d'adoration",
+        "designation": "Louange et adoration",
+        "excerpt": "Diriger la maison dans une louange dynamique et une adoration remplie de l'Esprit chaque semaine."
+      },
+      {
+        "title": "Équipe de prière",
+        "designation": "Intercession",
+        "excerpt": "Se tenir avec les familles dans la foi pour la guérison, la percée et la restauration."
+      },
+      {
+        "title": "Équipe média",
+        "designation": "Médias du ministère",
+        "excerpt": "Capturer et partager les sermons, témoignages et moments de CSM."
+      },
+      {
+        "title": "Équipe d'accueil",
+        "designation": "Hospitalité",
+        "excerpt": "Accueillir chaque invité pour qu'il se sente chez lui dans la maison de Dieu."
+      },
+      {
+        "title": "Équipe d'évangélisation",
+        "designation": "Communauté",
+        "excerpt": "Porter l'Évangile au-delà des murs et servir notre ville avec amour."
+      }
+    ]
+  }
+}
