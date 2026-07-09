@@ -9,7 +9,12 @@
         <div class="col-xl-6 col-lg-6">
           <div class="contact-page__left">
             <div class="contact-page__img">
-              <img src="~images/resources/contact-page-img-1.jpg" alt="" />
+              <img
+                src="~images/resources/contact-page-img-1.jpg"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <p class="contact-page__text">{{ $t("contact.intro") }}</p>
             <div class="contact-page__contact-info">

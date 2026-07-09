@@ -40,6 +40,8 @@
               <img
                 src="~images/resources/helping-one-left-img.jpg"
                 alt="CSM congregation"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>

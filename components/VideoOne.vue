@@ -10,6 +10,9 @@
         <img
           src="~/assets/images/backgrounds/help-them-bg.jpg"
           class="jarallax-img"
+          loading="lazy"
+          decoding="async"
+          alt=""
         />
       </div>
     </client-only>

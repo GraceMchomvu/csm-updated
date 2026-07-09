@@ -3,7 +3,7 @@
   <div class="news-two__single">
     <div class="news-two__img-box">
       <div class="news-two__img">
-        <img :src="require(`~/assets/images${thumbnail}`)" :alt="title" />
+        <img :src="require(`~/assets/images${thumbnail}`)" :alt="title" loading="lazy" decoding="async" />
         <nuxt-link :to="url">
           <i class="fa fa-plus"></i>
         </nuxt-link>

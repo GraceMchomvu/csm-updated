@@ -9,12 +9,19 @@
                 <img
                   src="~images/resources/welcome-one-img-1.jpg"
                   alt="CSM worship"
+                  width="640"
+                  height="720"
+                  decoding="async"
                 />
               </div>
               <div class="welcome-one__media-side">
                 <img
                   src="~images/resources/welcome-one-img-2.jpg"
                   alt="CSM ministry"
+                  width="320"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <span class="welcome-one__media-label">{{
                   $t("home.welcome.karibu")

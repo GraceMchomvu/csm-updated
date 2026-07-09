@@ -8,7 +8,7 @@
       :aria-label="title"
       @click.prevent="openLightbox"
     >
-      <img :src="imageSrc" :alt="title" />
+      <img :src="imageSrc" :alt="title" loading="lazy" decoding="async" />
       <div class="gallery-page__hover-content-box">
         <h2 v-html="title"></h2>
         <p>{{ category }}</p>

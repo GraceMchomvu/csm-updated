@@ -3,7 +3,7 @@
   <div class="team-one__single">
     <div class="team-one__img-box">
       <div class="team-one__img">
-        <img :src="require(`~/assets/images${thumbnail}`)" :alt="title" />
+        <img :src="require(`~/assets/images${thumbnail}`)" :alt="title" loading="lazy" decoding="async" />
       </div>
       <div class="team-one__member-name">
         <h2>{{ title }}</h2>

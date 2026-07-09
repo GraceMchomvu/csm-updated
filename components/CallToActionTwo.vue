@@ -10,6 +10,9 @@
         <img
           src="~/assets/images/backgrounds/join-one-bg.jpg"
           class="jarallax-img"
+          loading="lazy"
+          decoding="async"
+          alt=""
         />
       </div>
     </client-only>

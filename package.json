@@ -13,7 +13,8 @@
     "generate": "cross-env NODE_OPTIONS=--openssl-legacy-provider nuxt generate",
     "cf:build": "npm run generate",
     "cf:deploy": "npm run generate && npx wrangler pages deploy dist --project-name=csm-church",
-    "cf:preview": "npm run generate && npx wrangler pages dev dist --compatibility-date=2024-09-23"
+    "cf:preview": "npm run generate && npx wrangler pages dev dist --compatibility-date=2024-09-23",
+    "optimize:images": "node scripts/optimize-images.js"
   },
   "dependencies": {
     "@nuxtjs/i18n": "^7.3.1",
