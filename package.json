@@ -2,11 +2,15 @@
   "name": "halpes-nuxt",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": "18.x"
+  },
+  "packageManager": "npm@10.9.2",
   "scripts": {
-    "dev": "set NODE_OPTIONS=--openssl-legacy-provider&& nuxt",
-    "build": "set NODE_OPTIONS=--openssl-legacy-provider&& nuxt build",
-    "start": "set NODE_OPTIONS=--openssl-legacy-provider&& nuxt start",
-    "generate": "set NODE_OPTIONS=--openssl-legacy-provider&& nuxt generate",
+    "dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider nuxt",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider nuxt build",
+    "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider nuxt start",
+    "generate": "cross-env NODE_OPTIONS=--openssl-legacy-provider nuxt generate",
     "cf:build": "npm run generate",
     "cf:deploy": "npm run generate && npx wrangler pages deploy dist --project-name=csm-church",
     "cf:preview": "npm run generate && npx wrangler pages dev dist --compatibility-date=2024-09-23"
@@ -32,5 +36,8 @@
     "vue-tiny-slider": "^0.1.39",
     "vue-wow": "^1.2.0",
     "vuejs-countdown": "^0.2.1"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0"
   }
 }
