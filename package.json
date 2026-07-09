@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "engines": {
-    "node": "18.x"
+    "node": ">=18 <=20"
   },
   "packageManager": "npm@10.9.2",
   "scripts": {
@@ -38,6 +38,6 @@
     "vuejs-countdown": "^0.2.1"
   },
   "devDependencies": {
-    "cross-env": "^10.1.0"
+    "cross-env": "^7.0.3"
   }
 }
