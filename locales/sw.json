@@ -1,0 +1,408 @@
+{
+  "meta": {
+    "title": "Christ Synagogue Ministries | Arusha, Tanzania",
+    "description": "Christ Synagogue Ministries ni kanisa lenye nguvu la Roho Mtakatifu huko Majengo, Arusha, linaloongozwa na Prophet Baraka David Ogillo."
+  },
+  "common": {
+    "home": "Nyumbani",
+    "callAnytime": "Piga Simu Wakati Wowote",
+    "sendEmail": "Tuma Barua Pepe",
+    "visitUs": "Tutembelee",
+    "visit": "Tembelea",
+    "location": "Mahali",
+    "email": "Barua pepe",
+    "search": "Tafuta",
+    "searchPlaceholder": "Tafuta Hapa...",
+    "give": "Toa",
+    "watchOnYoutube": "Tazama kwenye YouTube",
+    "watchNow": "Tazama sasa",
+    "watchTheVideo": "Tazama Video",
+    "learnMore": "Jifunze Zaidi Kutuhusu",
+    "planYourVisit": "Panga Ziara Yako",
+    "contactUs": "Wasiliana Nasi",
+    "getDirections": "Pata Maelekezo",
+    "joinUs": "Jiunge Nasi",
+    "loading": "Inapakia…",
+    "youtube": "YouTube",
+    "language": "Lugha"
+  },
+  "nav": {
+    "home": "Nyumbani",
+    "about": "Kuhusu",
+    "services": "Ibada",
+    "gallery": "Matunzio",
+    "sermons": "Mahubiri",
+    "contact": "Mawasiliano"
+  },
+  "pages": {
+    "about": {
+      "title": "Kuhusu Sisi",
+      "name": "Kuhusu",
+      "eyebrow": "Hadithi Yetu",
+      "subtitle": "Nyumba yenye Roho Mtakatifu inayosaidia watu kumpata na kumfuata Yesu."
+    },
+    "contact": {
+      "title": "Wasiliana Nasi",
+      "name": "Mawasiliano",
+      "eyebrow": "Panga Ziara Yako",
+      "subtitle": "Karibu Majengo, Arusha. Tungependa kukutana nawe."
+    },
+    "events": {
+      "title": "Ibada",
+      "name": "Ibada",
+      "eyebrow": "Kusanyika Nasi",
+      "subtitle": "Njoo kuabudu, kuomba, na kukua pamoja nasi wiki nzima."
+    },
+    "news": {
+      "title": "Mahubiri",
+      "name": "Mahubiri",
+      "eyebrow": "Tazama na Ukue",
+      "subtitle": "Jumbe za hivi karibuni kutoka kwa Prophet Baraka David Ogillo YouTube."
+    },
+    "gallery": {
+      "title": "Matunzio",
+      "name": "Matunzio",
+      "eyebrow": "Nyakati za Imani",
+      "subtitle": "Picha za ibada, maombi, na maisha yaliyobadilishwa CSM."
+    },
+    "volunteers": {
+      "title": "Huduma",
+      "name": "Huduma",
+      "eyebrow": "Huduma Yetu",
+      "subtitle": "Timu zinazohudumu kwa upendo, imani, na ubora CSM."
+    }
+  },
+  "footer": {
+    "aboutTitle": "Kuhusu",
+    "aboutText": "Christ Synagogue Ministries ni kanisa lenye nguvu la Roho Mtakatifu huko Majengo, Arusha, linalosaidia watu kumtafuta na kumfuata Yesu.",
+    "exploreTitle": "Chunguza",
+    "ourProphet": "Nabii Wetu",
+    "ministry": "Huduma",
+    "contactTitle": "Mawasiliano",
+    "newsletterTitle": "Endelea Kuunganishwa",
+    "newsletterText": "Jisajili kupata taarifa za ibada, mahubiri, na habari za huduma kutoka CSM.",
+    "emailPlaceholder": "Anwani ya barua pepe",
+    "send": "Tuma",
+    "newsletterSent": "Programu yako ya barua pepe itafunguka kukamilisha ombi la usajili.",
+    "copyright": "© Hakimiliki {year} na"
+  },
+  "site": {
+    "tagline": "Kusaidia Watu Kumtafuta na Kumfuata Yesu",
+    "location": "Majengo, Arusha, Tanzania",
+    "locationShort": "Majengo, Arusha",
+    "serviceTimes": "Jumamosi 2:00 PM · Jumapili 10:00 AM · Jumanne/Alhamisi 6:00 PM EAT",
+    "prophet": "Prophet Baraka David Ogillo"
+  },
+  "home": {
+    "slider": [
+      {
+        "subtitle": "Christ Synagogue Ministries",
+        "title": "Kusaidia Watu Kumtafuta <br> na Kumfuata Yesu",
+        "buttonLabel": "Panga Ziara Yako"
+      },
+      {
+        "subtitle": "Jiunge Nasi katika Ibada",
+        "title": "Nyumba Iliyo Hai <br> kwa Sifa",
+        "buttonLabel": "Ibada Zetu"
+      },
+      {
+        "subtitle": "Prophet Baraka David Ogillo",
+        "title": "Maisha Yaliyobadilishwa <br> kwa Imani",
+        "buttonLabel": "Kutana na Nabii Wetu"
+      }
+    ],
+    "counter": [
+      "Miaka ya Huduma",
+      "Maisha Yaliyobadilishwa"
+    ],
+    "welcome": {
+      "karibu": "Karibu CSM",
+      "tagline": "Karibu CSM",
+      "title": "Kusaidia watu kumtafuta na kumfuata Yesu",
+      "text": "Christ Synagogue Ministries ni jamii yenye nguvu ya waumini huko Arusha, Tanzania, iliyojitolea kubadilisha maisha kupitia nguvu ya Roho Mtakatifu chini ya Prophet Baraka David Ogillo.",
+      "missionTitle": "Dhamira Yetu",
+      "missionText": "Kumtukuza Mungu na kuwafanya wanafunzi wa mataifa yote kupitia nguvu ya Roho Mtakatifu.",
+      "visionTitle": "Maono Yetu",
+      "visionText": "Jamii inayostawi iliyobadilishwa na upendo wa Mungu kote Tanzania na kwingineko.",
+      "values": "Maadili Yetu:",
+      "valuesText": "Imani, Uadilifu, Jamii, na Ubora — nguzo zinazoongoza kila tunachofanya katika CSM.",
+      "learnMore": "Jifunze Zaidi Kutuhusu",
+      "liveNow": "Moja kwa Moja Sasa",
+      "latestLive": "Ibada ya Hivi Karibuni Moja kwa Moja",
+      "latestService": "Ibada ya Hivi Karibuni kutoka CSM",
+      "loadingLive": "Inapakia ibada ya hivi karibuni…",
+      "liveUnavailable": "Ibada ya hivi karibuni haipatikani kwa sasa.",
+      "openChannel": "Fungua kituo cha YouTube"
+    },
+    "sermons": {
+      "subtitle": "Mahubiri ya Hivi Karibuni",
+      "title": "Neno Lenye Nguvu kwa Safari Yako",
+      "intro": "Tazama ujumbe mpya kutoka kwa Prophet Baraka David Ogillo. Mlisho huu unasasishwa kiotomatiki mahubiri mapya yanapopakiwa kwenye YouTube.",
+      "loading": "Inapakia mahubiri…",
+      "unavailable": "Mahubiri hayapatikani kwa sasa.",
+      "watchSermon": "Tazama Hotuba",
+      "viewAll": "Tazama Yote kwenye YouTube"
+    },
+    "cta": {
+      "title": "Njoo tuabudu pamoja <br /> Majengo, Arusha",
+      "button": "Panga Ziara Yako"
+    },
+    "features": [
+      {
+        "title": "Ibada ya Alhamisi",
+        "text": "Ibada na huduma kila Alhamisi saa 6:00 PM EAT huko Arusha."
+      },
+      {
+        "title": "Ibada ya Jumamosi",
+        "text": "Ushirika, ibada, na ukuaji wa kiroho kila Jumamosi saa 2:00 PM EAT."
+      },
+      {
+        "title": "Ibada ya Jumapili",
+        "text": "Ibada, huduma ya kinabii, na fundisho la Neno la Mungu saa 10:00 AM EAT."
+      }
+    ],
+    "visit": {
+      "tagline": "Tutembelee",
+      "title": "Pata njia yako kwenda CSM",
+      "welcomeTitle": "Karibu — Unakaribishwa",
+      "welcomeText": "Christ Synagogue Ministries hukutana wiki nzima huko Arusha kuabudu, kuomba, na kukua pamoja katika imani. Tungependa kukukaribisha wiki hii.",
+      "sat": "Ibada ya Jumamosi · 2:00 PM EAT",
+      "sun": "Ibada ya Jumapili · 10:00 AM EAT",
+      "tueThu": "Jumanne na Alhamisi · 6:00 PM EAT",
+      "eyebrow": "Njoo Tuabudu Pamoja",
+      "serviceTimes": "Nyakati za Ibada",
+      "satShort": "Jumamosi",
+      "sunShort": "Jumapili",
+      "tueThuShort": "Jumanne / Alhamisi"
+    },
+    "give": {
+      "tagline": "Shirikiana Nasi",
+      "title": "Toa kwa Kazi ya Mungu",
+      "intro": "Msaada wako wa ukarimu unatuwezesha kuendelea kueneza Injili, kuhudumia jamii yetu, na kubadilisha maisha kote Tanzania.",
+      "mpesaTitle": "M-Pesa",
+      "mpesaLabel": "Toa kupitia M-Pesa",
+      "mpesaSend": "Tuma kwa: {phone}",
+      "mpesaName": "Jina: Christ Synagogue Ministries",
+      "bankTitle": "Uhamisho wa Benki",
+      "bankLabel": "CRDB Bank",
+      "bankAccount": "Akaunti: 015C922043100",
+      "bankName": "Jina: CHRISTS SYNAGOGUE MINISTRY",
+      "personTitle": "Ana kwa Ana",
+      "personLabel": "Toa wakati wa ibada yetu ya Jumapili",
+      "personDetail1": "Vikapu vya sadaka vinapatikana",
+      "personDetail2": "wakati wa ibada",
+      "verse": "“Toeni, nanyi mtapewa; kipimo kizuri, kilichoshinikizwa, kilichotikiswa, na kinachofurika, kitatolewa katika mapaja yenu.”",
+      "verseRef": "— Luka 6:38"
+    },
+    "testimonials": {
+      "subtitle": "Ushuhuda",
+      "title": "Maisha yaliyobadilishwa na Yesu",
+      "member": "Mwanakanisa",
+      "items": [
+        "Nilikuja CSM nikiwa nimevunjika na bila tumaini. Kupitia nguvu ya maombi na Neno la Mungu, Yesu alibadilisha maisha yangu kabisa. Alirejesha familia yangu na kunipa kusudi jipya ndani Yake.",
+        "Uwepo wa Mungu katika Christ Synagogue Ministries unahisiwa. Yesu ameimarisha imani yangu kupitia Neno Lake, nami nimeona nguvu Zake zikibadilisha moyo wangu kwa njia ambazo sikuwahi kufikiria.",
+        "Yesu aliniponya, aliniokoa, na kunijaza mafuta mapya. Kile Mungu alichosema juu ya maisha yangu kilikuwa sahihi na kilibadilisha maisha. Katika CSM nimeshuhudia miujiza ya Yesu."
+      ]
+    },
+    "video": {
+      "title": "Njoo uone uwepo wa Mungu pamoja nasi",
+      "watch": "Tazama Video",
+      "features": [
+        {
+          "title": "Tuabudu Pamoja",
+          "text": "Pata sifa yenye nguvu na uwepo wa Mungu katika kila ibada."
+        },
+        {
+          "title": "Kua katika Imani",
+          "text": "Badilishwa na fundisho la Neno la Mungu kila wiki."
+        },
+        {
+          "title": "Pata Kusudi Lako",
+          "text": "Jamii yenye Roho Mtakatifu inayosaidia watu kumtafuta na kumfuata Yesu."
+        }
+      ]
+    }
+  },
+  "about": {
+    "ledBy": "Inaongozwa na <span>Prophet Baraka</span> David Ogillo",
+    "tagline": "Hadithi Yetu na Dhamira",
+    "title": "Kanisa lililoitwa kubadilisha maisha",
+    "text": "Christ Synagogue Ministries ilianzishwa chini ya wito wa kimungu wa Prophet Baraka David Ogillo huko Arusha, Tanzania. Kilichoanza kama mkutano mdogo wa waumini waaminifu kimekua kuwa jamii yenye nguvu ya Roho Mtakatifu inayoathiri maisha ya maelfu.",
+    "highlight": "Hatujengi kanisa tu; tunajenga harakati ya maisha yaliyobadilishwa.",
+    "focus": [
+      "Ibada yenye Roho Mtakatifu kila wiki",
+      "Huduma ya unabii na ukombozi",
+      "Uanafunzi unaosaidia watu kumfuata Yesu",
+      "Familia ya kanisa yenye upendo Majengo, Arusha"
+    ],
+    "beliefs": {
+      "tagline": "Tunachoamini",
+      "title": "Moyo wa Christ Synagogue Ministries",
+      "intro": "Maisha yetu ya pamoja yanaongozwa na Neno la Mungu, nguvu ya Roho Mtakatifu, na hamu kubwa ya kuwasaidia watu kumpata na kumfuata Yesu.",
+      "pillars": [
+        {
+          "title": "Ibada",
+          "text": "Tunakusanyika kumtukuza Yesu kwa sifa yenye shauku na njaa ya uwepo Wake katika kila ibada."
+        },
+        {
+          "title": "Neno",
+          "text": "Tunafundisha Maandiko kwa uwazi na nguvu ili kila mwamini akue imara katika imani."
+        },
+        {
+          "title": "Huduma ya Unabii",
+          "text": "Tunaacha nafasi kwa Roho Mtakatifu kusema, kuponya, kukomboa, na kutoa mwongozo wa maisha."
+        },
+        {
+          "title": "Jumuiya",
+          "text": "Tunatembea pamoja kama familia — tukimkaribisha kila mtu katika upendo, maombi, na kusudi."
+        }
+      ],
+      "verse": "\"Kwa maana ufalme wa Mungu si katika maneno, bali katika nguvu.\"",
+      "verseRef": "— 1 Wakorintho 4:20"
+    }
+  },
+  "contact": {
+    "tagline": "Pata Njia Yako kwenda CSM",
+    "title": "Tungependa kukukaribisha <br /> wiki hii",
+    "intro": "Tembelea Christ Synagogue Ministries huko Majengo, Arusha. Jiunge nasi kwa ibada, maombi, na huduma ya kinabii wiki nzima.",
+    "name": "Jina lako",
+    "email": "Anwani ya barua pepe",
+    "subject": "Mada",
+    "phone": "Nambari ya Simu",
+    "message": "Andika ujumbe",
+    "submit": "Tuma Ujumbe",
+    "sentHint": "Programu yako ya barua pepe itafunguka ili utume ujumbe huu kwa CSM.",
+    "mapTitle": "Christ Synagogue Ministries — Majengo, Arusha"
+  },
+  "events": {
+    "items": [
+      {
+        "title": "Ibada ya Alhamisi",
+        "time": "6:00 PM EAT"
+      },
+      {
+        "title": "Ibada ya Jumamosi",
+        "time": "2:00 PM EAT"
+      },
+      {
+        "title": "Ibada ya Jumapili",
+        "time": "10:00 AM EAT"
+      },
+      {
+        "title": "Ibada ya Jumanne",
+        "time": "6:00 PM EAT"
+      },
+      {
+        "title": "Sifa na Ibada",
+        "time": "10:00 AM EAT"
+      },
+      {
+        "title": "Huduma ya Kinabii",
+        "time": "6:00 PM EAT"
+      }
+    ]
+  },
+  "news": {
+    "items": [
+      {
+        "title": "Ibada ya Jumapili ya Hivi Karibuni",
+        "excerpt": "Badilishwa na fundisho la Neno la Mungu kutoka kwa Prophet Baraka David Ogillo."
+      },
+      {
+        "title": "Huduma ya Kinabii ya Hivi Karibuni",
+        "excerpt": "Pokea maneno ya kinabii ya kibinafsi, mwongozo wa kimungu, na mwelekeo wa kiroho kwa maisha yako."
+      },
+      {
+        "title": "Ibada ya Hivi Karibuni",
+        "excerpt": "Nyumba iliyo hai kwa sifa — pata ibada yenye nguvu katika Christ Synagogue Ministries."
+      },
+      {
+        "title": "Maombi na Ushirika",
+        "excerpt": "Tunakutana wiki nzima kuabudu, kuomba, na kukua pamoja katika imani."
+      },
+      {
+        "title": "Nyakati za Ushuhuda",
+        "excerpt": "Hadithi za uponyaji, ukombozi, na maisha yaliyobadilishwa na nguvu ya Roho Mtakatifu."
+      },
+      {
+        "title": "Karibu Nyumbani CSM",
+        "excerpt": "Haijalishi ulipo katika safari yako ya kiroho, kuna mahali kwako katika CSM."
+      }
+    ],
+    "comments": "Maoni {count}"
+  },
+  "gallery": {
+    "items": [
+      {
+        "title": "Kundi la Waumini",
+        "category": "Jamii"
+      },
+      {
+        "title": "Sifa na Ibada",
+        "category": "Ibada"
+      },
+      {
+        "title": "Ibada ya Maombi",
+        "category": "Maombi"
+      },
+      {
+        "title": "Huduma ya Kinabii",
+        "category": "Huduma"
+      },
+      {
+        "title": "Wakati wa Ushuhuda",
+        "category": "Ushuhuda"
+      },
+      {
+        "title": "Ibada ya Kinabii",
+        "category": "Huduma"
+      },
+      {
+        "title": "Familia ya Kanisa",
+        "category": "Jamii"
+      },
+      {
+        "title": "Huduma ya Ibada",
+        "category": "Ibada"
+      },
+      {
+        "title": "Maisha Yaliyobadilishwa",
+        "category": "Ushuhuda"
+      }
+    ]
+  },
+  "volunteers": {
+    "items": [
+      {
+        "title": "Prophet Baraka David Ogillo",
+        "designation": "Mwanzilishi na Nabii Mkuu",
+        "excerpt": "Ameitwa kuanzisha huduma ya uponyaji, ukombozi, na ufunuo wa kinabii huko Arusha."
+      },
+      {
+        "title": "Timu ya Ibada",
+        "designation": "Sifa na Ibada",
+        "excerpt": "Kuongoza nyumba katika sifa yenye nguvu na ibada yenye Roho Mtakatifu kila wiki."
+      },
+      {
+        "title": "Timu ya Maombi",
+        "designation": "Uombezi",
+        "excerpt": "Kusimama na familia katika imani kwa uponyaji, mafanikio, na urejesho."
+      },
+      {
+        "title": "Timu ya Media",
+        "designation": "Media ya Huduma",
+        "excerpt": "Kurekodi na kushiriki mahubiri, ushuhuda, na nyakati kutoka CSM."
+      },
+      {
+        "title": "Timu ya Ukaribishaji",
+        "designation": "Ukarimu",
+        "excerpt": "Kukaribisha kila mgeni ili ahisi nyumbani katika nyumba ya Mungu."
+      },
+      {
+        "title": "Timu ya Uinjilisti",
+        "designation": "Jamii",
+        "excerpt": "Kupeleka Injili nje ya kuta na kuhudumia jiji letu kwa upendo."
+      }
+    ]
+  }
+}

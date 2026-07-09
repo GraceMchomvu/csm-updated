@@ -88,8 +88,11 @@ dist
 # IDE / Editor
 .idea
 
-# Service worker
-sw.*
+# Service worker (do not ignore locales/sw.json)
+/sw.js
+/sw.js.map
+/static/sw.js
+/static/sw.js.map
 
 # macOS
 .DS_Store
