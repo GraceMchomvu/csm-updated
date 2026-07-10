@@ -1860,10 +1860,57 @@ h6 {
 }
 
 .visit-home__schedule {
-  background: #1c1917;
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(145deg, rgba(15, 138, 123, 0.22) 0%, transparent 42%),
+    linear-gradient(180deg, #1a2422 0%, #121716 100%);
   color: #ffffff;
-  padding: 22px 20px;
+  padding: 20px 20px 18px;
   margin-bottom: 24px;
+  border: 1px solid rgba(15, 138, 123, 0.28);
+  border-left: 3px solid var(--thm-accent);
+  box-shadow: 0 12px 28px rgba(18, 23, 22, 0.18);
+}
+
+.visit-home__schedule::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  right: -30px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(211, 137, 9, 0.18) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.visit-home__schedule-head {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.visit-home__schedule-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: rgba(211, 137, 9, 0.18);
+  color: var(--thm-accent);
+  font-size: 14px;
 }
 
 .visit-home__schedule-label {
@@ -1871,38 +1918,56 @@ h6 {
   font-family: var(--thm-font);
   font-size: 14px;
   font-weight: 900;
-  line-height: 24px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   color: var(--thm-accent);
-  margin-bottom: 14px;
+  margin: 0;
 }
 
 .visit-home__schedule-grid {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
 }
 
-.visit-home__schedule-grid div {
+.visit-home__schedule-grid li {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
+  padding: 12px 12px 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: background-color 250ms ease, border-color 250ms ease,
+    transform 250ms ease;
+}
+
+.visit-home__schedule-grid li:hover {
+  background: rgba(15, 138, 123, 0.16);
+  border-color: rgba(15, 138, 123, 0.35);
+  transform: translateY(-2px);
 }
 
 .visit-home__schedule-grid em {
   font-style: normal;
   font-family: var(--thm-font);
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(255, 255, 255, 0.55);
-  font-weight: 900;
+  font-size: 13px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.58);
+  font-weight: 700;
 }
 
 .visit-home__schedule-grid span {
   font-family: var(--thm-font);
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 17px;
+  line-height: 24px;
   font-weight: 900;
   color: #ffffff;
+  letter-spacing: 0.01em;
 }
 
 .visit-home__actions {
@@ -1990,10 +2055,6 @@ h6 {
   .visit-home__panel {
     padding: 32px 22px 28px;
     margin-top: 30px;
-  }
-
-  .visit-home__schedule-grid {
-    grid-template-columns: 1fr;
   }
 
   .visit-home__title {

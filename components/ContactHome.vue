@@ -99,23 +99,28 @@
             </ul>
 
             <div class="visit-home__schedule">
-              <span class="visit-home__schedule-label">{{
-                $t("home.visit.serviceTimes")
-              }}</span>
-              <div class="visit-home__schedule-grid">
-                <div>
+              <div class="visit-home__schedule-head">
+                <span class="visit-home__schedule-icon" aria-hidden="true">
+                  <i class="far fa-clock"></i>
+                </span>
+                <span class="visit-home__schedule-label">{{
+                  $t("home.visit.serviceTimes")
+                }}</span>
+              </div>
+              <ul class="list-unstyled visit-home__schedule-grid">
+                <li>
                   <em>{{ $t("home.visit.satShort") }}</em>
                   <span>2:00 PM</span>
-                </div>
-                <div>
+                </li>
+                <li>
                   <em>{{ $t("home.visit.sunShort") }}</em>
                   <span>10:00 AM</span>
-                </div>
-                <div>
+                </li>
+                <li>
                   <em>{{ $t("home.visit.tueThuShort") }}</em>
                   <span>6:00 PM</span>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
 
             <div class="visit-home__actions">
