@@ -9,7 +9,7 @@
 
       <div class="row">
         <div
-          class="col-xl-4 col-lg-4 col-md-6"
+          class="col-xl-3 col-lg-6 col-md-6"
           v-for="(method, index) in methods"
           :key="index"
         >
@@ -40,34 +40,58 @@ import data from "~/data/data.json";
 export default {
   computed: {
     methods() {
+      const giving = data.site.giving;
       return [
+        {
+          title: this.$t("home.give.bankPersonalTitle"),
+          label: this.$t("home.give.bankPersonalLabel"),
+          icon: "icon-donation-1",
+          details: [
+            this.$t("home.give.bankAccount", {
+              account: giving.bankPersonal.account,
+            }),
+            this.$t("home.give.accountName", {
+              name: giving.bankPersonal.name,
+            }),
+          ],
+        },
+        {
+          title: this.$t("home.give.bankMinistryTitle"),
+          label: this.$t("home.give.bankMinistryLabel"),
+          icon: "icon-donation-1",
+          details: [
+            this.$t("home.give.bankAccount", {
+              account: giving.bankMinistry.account,
+            }),
+            this.$t("home.give.accountName", {
+              name: giving.bankMinistry.name,
+            }),
+          ],
+        },
+        {
+          title: this.$t("home.give.lipaTitle"),
+          label: this.$t("home.give.lipaLabel"),
+          icon: "icon-chat",
+          details: [
+            this.$t("home.give.lipaNumber", {
+              number: giving.lipaNamba.number,
+            }),
+            this.$t("home.give.accountName", {
+              name: giving.lipaNamba.name,
+            }),
+          ],
+        },
         {
           title: this.$t("home.give.mpesaTitle"),
           label: this.$t("home.give.mpesaLabel"),
           icon: "icon-chat",
           details: [
             this.$t("home.give.mpesaSend", {
-              phone: data.site.giving.mpesa.number,
+              phone: giving.mpesa.number,
             }),
-            this.$t("home.give.mpesaName"),
-          ],
-        },
-        {
-          title: this.$t("home.give.bankTitle"),
-          label: this.$t("home.give.bankLabel"),
-          icon: "icon-donation-1",
-          details: [
-            this.$t("home.give.bankAccount"),
-            this.$t("home.give.bankName"),
-          ],
-        },
-        {
-          title: this.$t("home.give.personTitle"),
-          label: this.$t("home.give.personLabel"),
-          icon: "icon-heart",
-          details: [
-            this.$t("home.give.personDetail1"),
-            this.$t("home.give.personDetail2"),
+            this.$t("home.give.accountName", {
+              name: giving.mpesa.name,
+            }),
           ],
         },
       ];

@@ -20,14 +20,23 @@
     "prophet": "Prophet Baraka David Ogillo",
     "serviceTimes": "Sat 2:00 PM · Sun 10:00 AM · Tue/Thu 6:00 PM EAT",
     "giving": {
-      "mpesa": {
-        "number": "+255 769 075 062",
-        "name": "Christ Synagogue Ministries"
-      },
-      "bank": {
+      "bankPersonal": {
         "bankName": "CRDB Bank",
-        "account": "015C922043100",
+        "account": "0152032373000",
+        "name": "BARAKA DAVID OGILLO"
+      },
+      "bankMinistry": {
+        "bankName": "CRDB Bank",
+        "account": "0150922043100",
         "name": "CHRISTS SYNAGOGUE MINISTRY"
+      },
+      "lipaNamba": {
+        "number": "54346050",
+        "name": "CHRISTS SYNAGOGUE MINISTRY"
+      },
+      "mpesa": {
+        "number": "0753888885",
+        "name": "BARAKA OGILLO"
       }
     }
   },
