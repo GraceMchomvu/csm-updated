@@ -3738,7 +3738,15 @@ h6 {
   transition: visibility 500ms ease, opacity 500ms ease;
 }
 
-.testimonial-one__carousel .tns-slide-active {
+.testimonial-one__carousel .tns-slide-active,
+.testimonial-one__carousel .tns-item.tns-slide-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Keep cards readable if the slider fails to initialize */
+.testimonial-one__carousel > .tns-outer .tns-item.tns-slide-active,
+.testimonial-one__carousel:not(:has(.tns-outer)) .testimonial-one__single {
   opacity: 1;
   visibility: visible;
 }
