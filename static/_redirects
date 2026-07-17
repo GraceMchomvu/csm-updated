@@ -1,0 +1,4 @@
+# Force HTTPS and canonical host (Cloudflare Pages)
+http://csm.church/* https://www.csm.church/:splat 301
+http://www.csm.church/* https://www.csm.church/:splat 301
+https://csm.church/* https://www.csm.church/:splat 301

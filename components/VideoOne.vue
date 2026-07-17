@@ -32,7 +32,7 @@
                 :href="videoUrl"
                 class="help-them__top-video-btn"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 :aria-label="videoTitle ? `Watch ${videoTitle}` : $t('home.video.watch')"
                 ><i class="fa fa-play"></i
               ></a>

@@ -34,7 +34,7 @@
                   <li><nuxt-link to="/volunteers">{{ $t("footer.ministry") }}</nuxt-link></li>
                   <li><nuxt-link to="/contact">{{ $t("common.visitUs") }}</nuxt-link></li>
                   <li>
-                    <a :href="site.youtube" target="_blank" rel="noopener">{{
+                    <a :href="site.youtube" target="_blank" rel="noopener noreferrer">{{
                       $t("common.youtube")
                     }}</a>
                   </li>
@@ -68,7 +68,7 @@
                     <div class="text">
                       <p>
                         <span>{{ $t("common.visitUs") }}</span>
-                        <a :href="site.maps" target="_blank" rel="noopener">{{
+                        <a :href="site.maps" target="_blank" rel="noopener noreferrer">{{
                           $t("site.location")
                         }}</a>
                       </p>
@@ -114,16 +114,16 @@
                     <nuxt-link to="/" class="site-footer__logo-text">CSM</nuxt-link>
                   </div>
                   <div class="site-footer__bottom-social">
-                    <a :href="site.facebook" target="_blank" rel="noopener"
+                    <a :href="site.facebook" target="_blank" rel="noopener noreferrer"
                       ><i class="fab fa-facebook-square"></i
                     ></a>
-                    <a :href="site.tiktok" target="_blank" rel="noopener"
+                    <a :href="site.tiktok" target="_blank" rel="noopener noreferrer"
                       ><i class="fab fa-tiktok"></i
                     ></a>
                     <a :href="`mailto:${site.email}`"
                       ><i class="fas fa-envelope"></i
                     ></a>
-                    <a :href="site.maps" target="_blank" rel="noopener"
+                    <a :href="site.maps" target="_blank" rel="noopener noreferrer"
                       ><i class="fas fa-map-marker-alt"></i
                     ></a>
                   </div>
@@ -131,7 +131,7 @@
                 <div class="site-footer__bottom-copy-right">
                   <p>
                     {{ $t("footer.copyright", { year }) }}
-                    <a href="https://www.csm.church" target="_blank" rel="noopener"
+                    <a href="https://www.csm.church" target="_blank" rel="noopener noreferrer"
                       >Christ Synagogue Ministries</a
                     >
                   </p>

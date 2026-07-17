@@ -1,9 +1,20 @@
-const CHANNEL_ID = "UCPZvI54-Y9RCndQ1nwMZkqQ";
-const CHANNEL_URL = "https://www.youtube.com/@ogillob";
-const FEED_URL = `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`;
+const DEFAULT_CHANNEL_ID = "UCPZvI54-Y9RCndQ1nwMZkqQ";
+const DEFAULT_CHANNEL_URL = "https://www.youtube.com/@ogillob";
 const CACHE_MS = 10 * 60 * 1000;
+const ALLOWED_ORIGINS = new Set([
+  "https://www.csm.church",
+  "https://csm.church",
+]);
 
-let cache = { at: 0, sermons: [], latestLive: null };
+let cache = { at: 0, sermons: [], latestLive: null, channelId: "" };
+
+function isValidChannelId(id) {
+  return typeof id === "string" && /^UC[A-Za-z0-9_-]{22}$/.test(id);
+}
+
+function isValidVideoId(id) {
+  return typeof id === "string" && /^[A-Za-z0-9_-]{11}$/.test(id);
+}
 
 function decodeXml(text) {
   return text
@@ -15,12 +26,18 @@ function decodeXml(text) {
 }
 
 function buildVideo(id, title, published, link) {
+  if (!isValidVideoId(id)) return null;
   const autoplayEmbed = `https://www.youtube.com/embed/${id}?autoplay=1&mute=1&playsinline=1&rel=0&modestbranding=1`;
+  const safeLink =
+    typeof link === "string" &&
+    link.startsWith("https://www.youtube.com/watch?v=")
+      ? link
+      : `https://www.youtube.com/watch?v=${id}`;
   return {
     id,
     title,
     published,
-    url: link || `https://www.youtube.com/watch?v=${id}`,
+    url: safeLink,
     embedUrl: `https://www.youtube.com/embed/${id}`,
     autoplayEmbedUrl: autoplayEmbed,
     thumbnail: `https://i.ytimg.com/vi/${id}/hqdefault.jpg`,
@@ -62,15 +79,15 @@ async function fetchText(url) {
     redirect: "follow",
   });
   if (!res.ok) {
-    throw new Error(`HTTP ${res.status} for ${url}`);
+    throw new Error(`HTTP ${res.status}`);
   }
   return res.text();
 }
 
-async function detectLiveStream() {
+async function detectLiveStream(channelId) {
   try {
     const html = await fetchText(
-      `https://www.youtube.com/channel/${CHANNEL_ID}/live`
+      `https://www.youtube.com/channel/${channelId}/live`
     );
     const isLive =
       /"isLiveNow"\s*:\s*true/i.test(html) ||
@@ -81,7 +98,7 @@ async function detectLiveStream() {
     const id =
       (html.match(/"videoId":"([a-zA-Z0-9_-]{11})"/) || [])[1] ||
       (html.match(/watch\?v=([a-zA-Z0-9_-]{11})/) || [])[1];
-    if (!id) return null;
+    if (!isValidVideoId(id)) return null;
 
     const title = decodeXml(
       (html.match(/<title>([^<]+)<\/title>/) || [])[1] || "Live Service"
@@ -101,36 +118,57 @@ async function detectLiveStream() {
   }
 }
 
-function jsonResponse(body, status = 200) {
+function corsOrigin(request) {
+  const origin = request.headers.get("Origin");
+  if (origin && ALLOWED_ORIGINS.has(origin)) return origin;
+  return "https://www.csm.church";
+}
+
+function jsonResponse(request, body, status = 200) {
   return new Response(JSON.stringify(body), {
     status,
     headers: {
-      "Content-Type": "application/json",
+      "Content-Type": "application/json; charset=utf-8",
       "Cache-Control": "public, max-age=180",
-      "Access-Control-Allow-Origin": "*",
+      "X-Content-Type-Options": "nosniff",
+      "Access-Control-Allow-Origin": corsOrigin(request),
+      "Access-Control-Allow-Methods": "GET, OPTIONS",
+      Vary: "Origin",
     },
   });
 }
 
 export async function onRequestGet(context) {
-  const channelId = context.env.YOUTUBE_CHANNEL_ID || CHANNEL_ID;
-  const channelUrl = context.env.YOUTUBE_CHANNEL_URL || CHANNEL_URL;
+  const { request, env } = context;
+  const channelId = isValidChannelId(env.YOUTUBE_CHANNEL_ID)
+    ? env.YOUTUBE_CHANNEL_ID
+    : DEFAULT_CHANNEL_ID;
+  const channelUrl =
+    typeof env.YOUTUBE_CHANNEL_URL === "string" &&
+    env.YOUTUBE_CHANNEL_URL.startsWith("https://www.youtube.com/")
+      ? env.YOUTUBE_CHANNEL_URL
+      : DEFAULT_CHANNEL_URL;
   const feedUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`;
 
   try {
     const now = Date.now();
-    if (!cache.sermons.length || now - cache.at > CACHE_MS) {
+    if (
+      !cache.sermons.length ||
+      cache.channelId !== channelId ||
+      now - cache.at > CACHE_MS
+    ) {
       const xml = await fetchText(feedUrl);
       const sermons = parseFeed(xml);
-      const live = await detectLiveStream();
+      const live = await detectLiveStream(channelId);
       cache = {
         at: now,
+        channelId,
         sermons,
         latestLive: live || pickLatestService(sermons),
       };
     }
 
-    return jsonResponse({
+    return jsonResponse(request, {
       ok: true,
       channelId,
       channelUrl,
@@ -138,11 +176,12 @@ export async function onRequestGet(context) {
       latestLive: cache.latestLive,
       updatedAt: new Date(cache.at).toISOString(),
     });
-  } catch (error) {
+  } catch {
     return jsonResponse(
+      request,
       {
         ok: false,
-        error: error.message,
+        error: "Upstream unavailable",
         sermons: cache.sermons,
         latestLive: cache.latestLive,
       },
@@ -151,13 +190,14 @@ export async function onRequestGet(context) {
   }
 }
 
-export async function onRequestOptions() {
+export async function onRequestOptions(context) {
   return new Response(null, {
     status: 204,
     headers: {
-      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Origin": corsOrigin(context.request),
       "Access-Control-Allow-Methods": "GET, OPTIONS",
       "Access-Control-Allow-Headers": "Content-Type",
+      Vary: "Origin",
     },
   });
 }

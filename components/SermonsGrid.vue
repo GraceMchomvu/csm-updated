@@ -13,7 +13,7 @@
 
       <div v-else-if="error && !sermons.length" class="sermons-page__status">
         {{ error }}
-        <a :href="channelUrl" target="_blank" rel="noopener">
+        <a :href="channelUrl" target="_blank" rel="noopener noreferrer">
           {{ $t("common.watchOnYoutube") }}
         </a>
       </div>
@@ -29,7 +29,7 @@
               class="sermons-page__media"
               :href="sermon.url"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
               :aria-label="`Watch ${sermon.title}`"
             >
               <img
@@ -44,7 +44,7 @@
                 formatDate(sermon.published)
               }}</span>
               <h3 class="sermons-page__title">
-                <a :href="sermon.url" target="_blank" rel="noopener">{{
+                <a :href="sermon.url" target="_blank" rel="noopener noreferrer">{{
                   sermon.title
                 }}</a>
               </h3>
@@ -52,7 +52,7 @@
                 class="thm-btn sermons-page__watch"
                 :href="sermon.url"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 <i class="fas fa-arrow-circle-right"></i>
                 {{ $t("home.sermons.watchSermon") }}
@@ -63,7 +63,7 @@
       </div>
 
       <div class="sermons-page__footer">
-        <a class="thm-btn" :href="channelUrl" target="_blank" rel="noopener">
+        <a class="thm-btn" :href="channelUrl" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-youtube"></i>
           {{ $t("home.sermons.viewAll") }}
         </a>

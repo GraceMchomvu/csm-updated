@@ -81,6 +81,9 @@
 </template>
 
 <script>
+import Accordion from "accordion-js";
+import "accordion-js/dist/accordion.min.css";
+
 export default {
   mounted() {
     new Accordion(".accordion-container", {

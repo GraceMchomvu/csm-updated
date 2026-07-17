@@ -126,16 +126,8 @@
                       type="text"
                       placeholder="Address"
                       name="address"
-                    />
-                  </div>
-                </div>
-                <div class="col-xl-12">
-                  <div class="become-volunteer-page__input">
-                    <input
-                      v-model.trim="form.dob"
-                      type="text"
-                      placeholder="Date of Birth"
-                      name="Date of Birth"
+                      maxlength="200"
+                      autocomplete="street-address"
                     />
                   </div>
                 </div>
@@ -146,6 +138,8 @@
                       type="text"
                       placeholder="Occupation"
                       name="Occupation"
+                      maxlength="120"
+                      autocomplete="organization-title"
                     />
                   </div>
                 </div>
@@ -155,9 +149,14 @@
                       v-model.trim="form.message"
                       name="message"
                       placeholder="Write message"
+                      maxlength="2000"
                       required
                     ></textarea>
                   </div>
+                  <p class="become-volunteer-page__privacy">
+                    Your details are sent only via your email app to
+                    info@csm.church. We do not store form data on this website.
+                  </p>
                   <p v-if="status" class="become-volunteer-page__status">
                     {{ status }}
                   </p>
@@ -190,7 +189,6 @@ export default {
         email: "",
         phone: "",
         address: "",
-        dob: "",
         occupation: "",
         message: "",
       },
@@ -205,7 +203,6 @@ export default {
           `Email: ${this.form.email}`,
           `Phone: ${this.form.phone || "N/A"}`,
           `Address: ${this.form.address || "N/A"}`,
-          `Date of Birth: ${this.form.dob || "N/A"}`,
           `Occupation: ${this.form.occupation || "N/A"}`,
           "",
           this.form.message,
@@ -223,6 +220,13 @@ export default {
   margin: 0 0 16px;
   color: var(--thm-primary);
   font-weight: 700;
+}
+
+.become-volunteer-page__privacy {
+  margin: 0 0 16px;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--thm-gray);
 }
 </style>
 

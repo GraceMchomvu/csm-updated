@@ -97,7 +97,8 @@
 <script>
 export default {
   mounted() {
-    new GLightbox({
+    if (typeof window === "undefined" || !window.GLightbox) return;
+    window.GLightbox({
       selector: ".video-popup",
       touchNavigation: true,
       loop: true,

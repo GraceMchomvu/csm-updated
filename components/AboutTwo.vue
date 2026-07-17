@@ -92,7 +92,7 @@
             :href="live.url"
             class="welcome-one__live-link"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             {{ $t("common.watchOnYoutube") }}
             <i class="fas fa-arrow-right"></i>
@@ -108,14 +108,14 @@
             <a
               href="https://www.youtube.com/@ogillob"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
               {{ $t("home.welcome.openChannel") }}
             </a>
           </div>
           <iframe
-            v-else-if="live"
-            :src="live.autoplayEmbedUrl || live.embedUrl"
+            v-else-if="safeEmbedUrl"
+            :src="safeEmbedUrl"
             title="Latest CSM live service"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -147,11 +147,30 @@ export default {
         (this.live && this.live.title) || this.$t("home.welcome.latestService")
       );
     },
+    safeEmbedUrl() {
+      const id = this.live && this.live.id;
+      if (!id || !/^[A-Za-z0-9_-]{11}$/.test(id)) return null;
+      return `https://www.youtube.com/embed/${id}?autoplay=1&mute=1&playsinline=1&rel=0&modestbranding=1`;
+    },
   },
   mounted() {
     this.loadLatestLive();
   },
   methods: {
+    sanitizeLive(video) {
+      if (!video || !video.id || !/^[A-Za-z0-9_-]{11}$/.test(video.id)) {
+        return null;
+      }
+      const id = video.id;
+      return {
+        ...video,
+        id,
+        url: `https://www.youtube.com/watch?v=${id}`,
+        embedUrl: `https://www.youtube.com/embed/${id}`,
+        autoplayEmbedUrl: `https://www.youtube.com/embed/${id}?autoplay=1&mute=1&playsinline=1&rel=0&modestbranding=1`,
+        thumbnail: `https://i.ytimg.com/vi/${id}/hqdefault.jpg`,
+      };
+    },
     async loadLatestLive() {
       this.loading = true;
       this.error = "";
@@ -159,10 +178,11 @@ export default {
         const response = await fetch("/api/sermons");
         const data = await response.json();
         if (!response.ok || !data.ok) {
-          throw new Error(data.error || "Unable to load live service");
+          throw new Error("Unable to load live service");
         }
-        this.live =
-          data.latestLive || (data.sermons && data.sermons[0]) || null;
+        this.live = this.sanitizeLive(
+          data.latestLive || (data.sermons && data.sermons[0]) || null
+        );
       } catch (err) {
         this.error = this.$t("home.welcome.liveUnavailable");
         console.error(err);

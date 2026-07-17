@@ -59,7 +59,7 @@
                 <a
                   :href="site.maps"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                   class="visit-home__row"
                 >
                   <span class="visit-home__icon">
@@ -128,7 +128,7 @@
                 :href="site.maps"
                 class="thm-btn"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 <i class="fas fa-arrow-circle-right"></i>
                 {{ $t("common.getDirections") }}

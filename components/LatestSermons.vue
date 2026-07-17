@@ -18,7 +18,7 @@
           class="latest-sermons__channel-link"
           :href="channelUrl"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
           {{ $t("common.watchOnYoutube") }}
         </a>
@@ -39,7 +39,7 @@
               class="latest-sermons__media"
               :href="sermon.url"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
               :aria-label="`Watch ${sermon.title}`"
             >
               <img
@@ -56,7 +56,7 @@
                 formatDate(sermon.published)
               }}</span>
               <h3 class="latest-sermons__title">
-                <a :href="sermon.url" target="_blank" rel="noopener">{{
+                <a :href="sermon.url" target="_blank" rel="noopener noreferrer">{{
                   sermon.title
                 }}</a>
               </h3>
@@ -64,7 +64,7 @@
                 class="latest-sermons__watch thm-btn"
                 :href="sermon.url"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 <i class="fas fa-arrow-circle-right"></i>
                 {{ $t("home.sermons.watchSermon") }}
@@ -75,7 +75,7 @@
       </div>
 
       <div ref="footer" class="latest-sermons__footer">
-        <a class="thm-btn" :href="channelUrl" target="_blank" rel="noopener">
+        <a class="thm-btn" :href="channelUrl" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-youtube"></i>
           {{ $t("home.sermons.viewAll") }}
         </a>

@@ -47,7 +47,7 @@
                       <a
                         :href="site.maps"
                         target="_blank"
-                        rel="noopener"
+                        rel="noopener noreferrer"
                         >{{ $t("site.location") }}</a
                       >
                     </h5>

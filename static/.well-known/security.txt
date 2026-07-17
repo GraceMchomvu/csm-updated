@@ -1,0 +1,5 @@
+Contact: mailto:info@csm.church
+Expires: 2027-07-15T00:00:00.000Z
+Preferred-Languages: en, sw
+Canonical: https://www.csm.church/.well-known/security.txt
+Policy: https://www.csm.church/contact

@@ -72,26 +72,17 @@ export default {
         href: "/site.webmanifest",
       },
       {
-        rel: "stylesheet",
-        href: "//fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,700,700i,800,800i,900,900i",
+        rel: "preconnect",
+        href: "https://fonts.googleapis.com",
+      },
+      {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com",
+        crossorigin: true,
       },
       {
         rel: "stylesheet",
-        href: "//cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css",
-      },
-      {
-        rel: "stylesheet",
-        href: "//unpkg.com/accordion-js@3.1.1/dist/accordion.min.css",
-      },
-    ],
-    script: [
-      {
-        src: "//cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js",
-        body: true,
-      },
-      {
-        src: "//unpkg.com/accordion-js@3.1.1/dist/accordion.min.js",
-        body: true,
+        href: "https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,700,700i,800,800i,900,900i&display=swap",
       },
     ],
     loading: {
@@ -134,6 +125,10 @@ export default {
       src: "~/plugins/hash-scroll.js",
       mode: "client",
     },
+    {
+      src: "~/plugins/glightbox.client.js",
+      mode: "client",
+    },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -158,6 +153,8 @@ export default {
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: "csm_i18n",
+      cookieSecure: true,
+      cookieCrossOrigin: false,
       redirectOn: "root",
       alwaysRedirect: false,
     },

@@ -6,6 +6,7 @@
         <h2 class="section-title__title">{{ $t("home.give.title") }}</h2>
       </div>
       <p class="give-one__intro">{{ $t("home.give.intro") }}</p>
+      <p class="give-one__trust">{{ $t("home.give.trustNote") }}</p>
 
       <div class="row">
         <div

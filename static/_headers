@@ -2,9 +2,15 @@
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+  Cross-Origin-Opener-Policy: same-origin
+  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self' mailto:; img-src 'self' data: blob: https://i.ytimg.com https://*.ytimg.com https://maps.gstatic.com https://*.googleapis.com https://*.google.com https://*.gstatic.com; font-src 'self' data: https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline' 'unsafe-eval'; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://maps.google.com https://www.google.com; connect-src 'self' https://www.youtube.com; media-src 'self'; upgrade-insecure-requests
 
 /api/*
   Cache-Control: public, max-age=180
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
 
 /*.js
   Cache-Control: public, max-age=31536000, immutable
@@ -40,4 +46,8 @@
   Cache-Control: public, max-age=31536000, immutable
 
 /*.ico
+  Cache-Control: public, max-age=86400
+
+/.well-known/security.txt
+  Content-Type: text/plain; charset=utf-8
   Cache-Control: public, max-age=86400

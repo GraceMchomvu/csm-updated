@@ -2085,13 +2085,24 @@ h6 {
 
 .give-one__intro {
   max-width: 720px;
-  margin: 0 auto 45px;
+  margin: 0 auto 18px;
   text-align: center;
   color: var(--thm-gray);
   font-family: var(--thm-font);
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+}
+
+.give-one__trust {
+  max-width: 720px;
+  margin: 0 auto 45px;
+  text-align: center;
+  color: var(--thm-black);
+  font-family: var(--thm-font);
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 600;
 }
 
 .give-one__card {
