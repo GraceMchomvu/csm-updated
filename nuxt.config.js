@@ -35,11 +35,31 @@ export default {
           "Christ Synagogue Ministries is a vibrant Spirit-filled church in Arusha, Tanzania, led by Prophet Baraka David Ogillo.",
       },
       {
+        hid: "robots",
+        name: "robots",
+        content: "index, follow",
+      },
+      {
         name: "format-detection",
         content: "telephone=no",
       },
+      {
+        hid: "og:type",
+        property: "og:type",
+        content: "website",
+      },
+      {
+        hid: "og:site_name",
+        property: "og:site_name",
+        content: "Christ Synagogue Ministries",
+      },
     ],
     link: [
+      {
+        hid: "canonical",
+        rel: "canonical",
+        href: "https://www.csm.church/",
+      },
       {
         rel: "icon",
         type: "image/svg+xml",
